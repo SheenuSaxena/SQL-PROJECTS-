@@ -1,1 +1,2 @@
-# SQL_PROJECTS
+# SQL_PROJECT
+Music_Store_Analysis
