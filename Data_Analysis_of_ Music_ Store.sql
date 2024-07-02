@@ -101,7 +101,7 @@ limit 10;
 -- Return the Name and Milliseconds for each track. Order by the song length with the longest songs listed first.
 
 
--- solving_method: found out the average of the all songs
+-- solving_method: calculated the average of the all songs
 --                 used subquery to get the avg so that we can compare the avg of all songs and the actual length of the track in the same table
                 
 
@@ -124,9 +124,9 @@ WHERE
 
 -- Q1:Find how much amount spent by each customer on the best artist artists? Write a query to return customer name, artist name and total spent.
 
--- SOLVING_METHOD: -frist found out the best artist using group by and order by clause and also by joining the table
+-- SOLVING_METHOD: -frist calculated the best artist using group by and order by clauses and also by joining the table
 --                 -used common table expression to get temporary table of the best artist
---                 -finaly found out the amt spent by each customer on the best artist
+--                 -finaly calculated the amt spent by each customer on the best artist
                      
     
     SELECT * FROM CUSTOMER;
@@ -157,7 +157,7 @@ ORDER BY amount_spent DESC;
 -- Q2:find out the most popular music Genre for each country.
 -- Write a query that returns each country along with the top Genre. For countries where the maximum number of purchases is shared return all Genres.
 
--- solving_method: -first got the count of each song and then ranked it according to the count using partition over country to get the result on the country basis
+-- solving_method: -first calculated the count of each song and then ranked it according to the count using partition over country to get the result on the country basis
 --                 -then selected those result where rank was 1 to get the most popular genre for each country.
 
 
