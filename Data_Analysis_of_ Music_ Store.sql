@@ -124,8 +124,8 @@ WHERE
 
 -- Q1:Find how much amount spent by each customer on the best artist artists? Write a query to return customer name, artist name and total spent.
 
--- SOLVING_METHOD: -frist calculated the best artist using group by and order by clauses and also by joining the table
---                 -used common table expression to get temporary table of the best artist
+-- SOLVING_METHOD: -frist found the best artist using group by and order by clauses and also by joining the tables
+--                 -used common table expression to get a temporary table of the best artist
 --                 -finaly calculated the amt spent by each customer on the best artist
                      
     
@@ -158,7 +158,7 @@ ORDER BY amount_spent DESC;
 -- Write a query that returns each country along with the top Genre. For countries where the maximum number of purchases is shared return all Genres.
 
 -- solving_method: -first calculated the count of each song and then ranked it according to the count using partition over country to get the result on the country basis
---                 -then selected those result where rank was 1 to get the most popular genre for each country.
+--                 -then selected those results where rank was 1 to get the most popular genre for each country.
 
 
 select * from genre;
